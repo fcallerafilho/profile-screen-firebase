@@ -1,3 +1,4 @@
+import { User } from './../../interfaces/user';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perfil.page.scss'],
 })
 export class PerfilPage implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
-  }
+  user = {
+    name: '',
+    email: '',
+    cidade: '',
+  };
 
+  atualizarDados() {}
 }

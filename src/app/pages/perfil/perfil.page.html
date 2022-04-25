@@ -13,16 +13,18 @@
 
   <ion-item>
     <ion-icon name="person-outline" lines="none"></ion-icon>
-    <ion-input placeholder="username"></ion-input>
+    <ion-input placeholder="username" [(ngModel)]="user.name"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-icon name="person-outline" lines="none"></ion-icon>
-    <ion-input placeholder="email"></ion-input>
+    <ion-input placeholder="email" [(ngModel)]="user.email"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-icon name="person-outline" lines="none"></ion-icon>
-    <ion-input placeholder="cidade"></ion-input>
+    <ion-input placeholder="cidade" [(ngModel)]="user.cidade"></ion-input>
   </ion-item>
+
+  <ion-button expand="block">Atualizar</ion-button>
 </ion-content>
